@@ -1,9 +1,13 @@
 import React from "react";
+import Navigation from "./Navigation";
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   return (
     <header className="header">
-      <h1>Home</h1>
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
     </header>
   );
 }
